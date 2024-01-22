@@ -28,7 +28,7 @@
             >Web<span class="logo-part">Studio</span></a
           >
 
-          <ul class="list">
+          <ul class="list address-list-li">
             <li>
               <a class="page-description-link page-nav-studio" href="./index.html">Studio</a>
             </li>
@@ -42,7 +42,7 @@
         </nav>
 
         <address class="contact">
-          <ul class="list">
+          <ul class="list address-list-two">
             <li>
               <a
                 href="mailto:info@devstudio.com"
@@ -57,6 +57,18 @@
             </li>
           </ul>
         </address>
+        <menu class="menu-hamburger">
+          <button
+            type="button"
+            class="button-hamburger menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+            </svg>
+          </button>
+        </menu>
       </div>
     </header>
 
@@ -131,6 +143,7 @@
           </ul>
         </div>
       </section>
+      <!--what are we doing-->
       <section class="section-what-are-we-doing">
         <div class="container">
           <h2 class="what-are-we-doing-title">What are we doing</h2>
@@ -569,6 +582,77 @@
         </form>
       </div>
     </div>
+    <!--hamburger menu-->
+    <div class="js-menu-container menu-container" id="mobile-menu">
+      <div class="div-hamburger">
+        <div class="button-hamburger-container">
+          <button class="js-close-button hamburger-close-button">
+            <svg class="hamburger-closebutton-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="hamburger-nav">
+          <ul class="hamburger-nav-list">
+            <li>
+              <a class="hamburger-nav-link link" href="./index.html">Studio </a>
+            </li>
+            <li>
+              <a class="hamburger-nav-link link" href="./portfolio.html">
+                Portfolio</a
+              >
+            </li>
+            <li><a class="hamburger-nav-link link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="hamburger-address">
+          <ul class="hamburger-address-list">
+            <li>
+              <a class="hamburger-phone link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="hamburger-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="hamburger-social-media">
+          <li class="hamburger-social-media-list">
+            <a class="hamburger-social-media-link" href="">
+              <svg class="hamburger-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+              ></a
+            >
+          </li>
+          <li class="hamburger-social-media-list">
+            <a class="hamburger-social-media-link" href="">
+              <svg class="hamburger-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hamburger-social-media-list">
+            <a class="hamburger-social-media-link" href="">
+              <svg class="hamburger-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hamburger-social-media-list">
+            <a class="hamburger-social-media-link" href="">
+              <svg class="hamburger-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
